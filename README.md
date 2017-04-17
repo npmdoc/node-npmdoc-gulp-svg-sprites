@@ -1,9 +1,11 @@
 # api documentation for  [gulp-svg-sprites (v4.1.1)](https://github.com/shakyshane/gulp-svg-sprites#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-svg-sprites.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-svg-sprites) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-svg-sprites.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-svg-sprites)
 #### Create SVG sprites with PNG fallbacks
 
-[![NPM](https://nodei.co/npm/gulp-svg-sprites.png?downloads=true)](https://www.npmjs.com/package/gulp-svg-sprites)
+[![NPM](https://nodei.co/npm/gulp-svg-sprites.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-svg-sprites)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-svg-sprites_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-svg-sprites/build/screenCapture.npmPackageListing.svg)
 
@@ -69,17 +71,14 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "shakyshane",
-            "email": "shakyshane@gmail.com"
+            "name": "shakyshane"
         },
         {
-            "name": "soenkekluth",
-            "email": "soenke.kluth@gmail.com"
+            "name": "soenkekluth"
         }
     ],
     "name": "gulp-svg-sprites",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/shakyshane/gulp-svg-sprites.git"
@@ -96,16 +95,6 @@
     "version": "4.1.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-svg-sprites](#apidoc.module.gulp-svg-sprites)
-
-
-
-# <a name="apidoc.module.gulp-svg-sprites"></a>[module gulp-svg-sprites](#apidoc.module.gulp-svg-sprites)
 
 
 
