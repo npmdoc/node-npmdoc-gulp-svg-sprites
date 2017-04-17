@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/shakyshane/gulp-svg-sprites#readme"
-
-    >gulp-svg-sprites (v4.1.1)</a>
+    <a href="https://github.com/shakyshane/gulp-svg-sprites#readme">gulp-svg-sprites (v4.1.1)</a>
 </h1>
 <h4>Create SVG sprites with PNG fallbacks</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-sprites">module gulp-svg-sprites</a><ol>
 
@@ -112,14 +105,14 @@
   config = _.merge(_.cloneDeep(defaults), config || {});
 
   // Backwards compatibility
-  if (typeof config.svgFile === &#x22;string&#x22;) {
+  if (typeof config.svgFile === "string") {
     config.svg.sprite = config.svgFile;
   }
   if (config.unit) {
     config.padding = config.unit;
   }
 
-  if (config.mode === &#x22;defs&#x22; || config.mode === &#x22;symbols&#x22;) {
+  if (config.mode === "defs" || config.mode === "symbols") {
     config.inline = true;
   } else {
     config.inline = false;
@@ -232,3 +225,4 @@ var stream = this;
     ]
 </div>
 </div>
+</body></html>

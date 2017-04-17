@@ -61,12 +61,168 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-sprites">module gulp-svg-sprites</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-sprites.gulp-svg-sprites">
+            function <span class="apidocSignatureSpan"></span>gulp-svg-sprites
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-sprites.toString">
+            function <span class="apidocSignatureSpan">gulp-svg-sprites.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-svg-sprites.toString">module gulp-svg-sprites.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-svg-sprites.toString.toString">
+            function <span class="apidocSignatureSpan">gulp-svg-sprites.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-svg-sprites" id="apidoc.module.gulp-svg-sprites">module gulp-svg-sprites</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-sprites.gulp-svg-sprites" id="apidoc.element.gulp-svg-sprites.gulp-svg-sprites">
+        function <span class="apidocSignatureSpan"></span>gulp-svg-sprites
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-svg-sprites = function (config) {
+
+  config = _.merge(_.cloneDeep(defaults), config || {});
+
+  // Backwards compatibility
+  if (typeof config.svgFile === &#x22;string&#x22;) {
+    config.svg.sprite = config.svgFile;
+  }
+  if (config.unit) {
+    config.padding = config.unit;
+  }
+
+  if (config.mode === &#x22;defs&#x22; || config.mode === &#x22;symbols&#x22;) {
+    config.inline = true;
+  } else {
+    config.inline = false;
+  }
+
+  var spriter = new SpriteData(config);
+
+  return through2.obj(function(file, enc, cb) {
+
+      spriter.add(file.path, file.contents.toString());
+
+      cb(null);
+
+    }, function(cb) {
+
+      var stream = this;
+
+      spriter.compile(config, function(err, svg) {
+          var onDoneAfterTransformData = function(data) {
+              writeFiles(stream, config, svg.svg, data, cb.bind(null, null));
+            };
+
+          var onDoneTransformData = function(data) {
+              config.afterTransform(data, config, onDoneAfterTransformData);
+            };
+
+          if (config.asyncTransforms) {
+            config.transformData(svg.data, config, onDoneTransformData);
+          } else {
+            // Get data
+            var data = config.transformData(svg.data, config);
+            data = config.afterTransform(data, config);
+            writeFiles(stream, config, svg.svg, data, cb.bind(null, null));
+          }
+        });
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-sprites.toString" id="apidoc.element.gulp-svg-sprites.toString">
+        function <span class="apidocSignatureSpan">gulp-svg-sprites.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      config.inline = false;
+    }
+
+    var spriter = new SpriteData(config);
+
+    return through2.obj(function(file, enc, cb) {
+
+spriter.add(file.path, file.contents.<span class="apidocCodeKeywordSpan">toString</span>());
+
+cb(null);
+
+      }, function(cb) {
+
+var stream = this;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-svg-sprites.toString" id="apidoc.module.gulp-svg-sprites.toString">module gulp-svg-sprites.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-svg-sprites.toString.toString" id="apidoc.element.gulp-svg-sprites.toString.toString">
+        function <span class="apidocSignatureSpan">gulp-svg-sprites.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      config.inline = false;
+    }
+
+    var spriter = new SpriteData(config);
+
+    return through2.obj(function(file, enc, cb) {
+
+spriter.add(file.path, file.contents.<span class="apidocCodeKeywordSpan">toString</span>());
+
+cb(null);
+
+      }, function(cb) {
+
+var stream = this;
+...</pre></li>
+    </ul>
+
 
 </div>
 
