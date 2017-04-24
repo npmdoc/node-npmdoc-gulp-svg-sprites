@@ -1,7 +1,7 @@
 <svg height="2270" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="2270" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">17 megabytes installed</tspan>
+<tspan x="10" y="26">16 megabytes installed</tspan>
 <tspan x="10" y="42"></tspan>
 <tspan x="10" y="58">node_modules</tspan>
 <tspan x="10" y="74">└─┬ gulp-svg-sprites@4.1.1 </tspan>
@@ -27,7 +27,7 @@
 <tspan x="10" y="394">  │ │   │ │ └── array-find-index@1.0.2 </tspan>
 <tspan x="10" y="410">  │ │   │ └── signal-exit@3.0.2 </tspan>
 <tspan x="10" y="426">  │ │   ├── map-obj@1.0.1 </tspan>
-<tspan x="10" y="442">  │ │   ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="442">  │ │   ├─┬ normalize-package-data@2.3.8 </tspan>
 <tspan x="10" y="458">  │ │   │ ├── hosted-git-info@2.4.2 </tspan>
 <tspan x="10" y="474">  │ │   │ ├─┬ is-builtin-module@1.0.0 </tspan>
 <tspan x="10" y="490">  │ │   │ │ └── builtin-modules@1.1.1 </tspan>
@@ -113,8 +113,8 @@
 <tspan x="10" y="1770">  │ │ ├── cssom@0.2.5 </tspan>
 <tspan x="10" y="1786">  │ │ └── underscore@1.8.3 </tspan>
 <tspan x="10" y="1802">  │ └─┬ xml-parser@1.2.1 </tspan>
-<tspan x="10" y="1818">  │   └─┬ debug@2.6.3 </tspan>
-<tspan x="10" y="1834">  │     └── ms@0.7.2 </tspan>
+<tspan x="10" y="1818">  │   └─┬ debug@2.6.4 </tspan>
+<tspan x="10" y="1834">  │     └── ms@0.7.3 </tspan>
 <tspan x="10" y="1850">  ├─┬ svgo@0.6.6 </tspan>
 <tspan x="10" y="1866">  │ ├── coa@1.0.1 </tspan>
 <tspan x="10" y="1882">  │ ├── colors@1.1.2 </tspan>
