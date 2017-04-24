@@ -1,4 +1,7 @@
-# api documentation for  [gulp-svg-sprites (v4.1.1)](https://github.com/shakyshane/gulp-svg-sprites#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-svg-sprites.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-svg-sprites) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-svg-sprites.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-svg-sprites)
+# npmdoc-gulp-svg-sprites
+
+#### api documentation for  [gulp-svg-sprites (v4.1.1)](https://github.com/shakyshane/gulp-svg-sprites#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-svg-sprites.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-svg-sprites) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-svg-sprites.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-svg-sprites)
+
 #### Create SVG sprites with PNG fallbacks
 
 [![NPM](https://nodei.co/npm/gulp-svg-sprites.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-svg-sprites)
@@ -92,7 +95,8 @@
         "gulp-scss": "gulp sprite:scss",
         "test": "gulp lint && mocha --recursive test/specs"
     },
-    "version": "4.1.1"
+    "version": "4.1.1",
+    "bin": {}
 }
 ```
 
